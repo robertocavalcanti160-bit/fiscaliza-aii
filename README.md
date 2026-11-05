@@ -21,7 +21,7 @@ Baixe o projeto e abra o arquivo `index.html` no navegador. É preciso estar con
 
 ## Tecnologias
 
-HTML5, CSS3, Bootstrap, JavaScript e GitHub.
+HTML, CSS, Bootstrap, JavaScript e GitHub.
 
 ## Integrantes
 
