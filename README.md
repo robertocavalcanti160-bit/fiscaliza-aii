@@ -20,8 +20,8 @@ Desenvolver uma plataforma web intuitiva e acessível que permita aos cidadãos 
 - Aplicar os conhecimentos de desenvolvimento Front-End adquiridos durante a formação acadêmica.
 
 5. NOME DOS INTEGRANTES:
-1. Roberto Gomes
-2. Davi Macêdo
-3. Gilson Junior
-4. Kauê Viegas
-5. André Arthur
+- Roberto Gomes
+- Davi Macêdo
+- Gilson Junior
+- Kauê Viegas
+- André Arthur
