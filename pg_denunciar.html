@@ -2,16 +2,64 @@
 
 <head>
     <title>Denunciar</title>
-    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #03542F;
+        }
+
+        header img {
+            width: 45px;
+            height: 45px;
+        }
+
+        header > a {
+            display: flex;
+            width: 60px;
+            height: 60px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
+    <header>
+        <a href="pg_inicio.html" aria-label="Fiscaliza Aí - Início">
+            <img src="logo.png" alt="Logo do Fiscaliza Aí">
+        </a>
+        <nav aria-label="Menu principal">
+            <a href="pg_inicio.html">Início</a>
+            <a href="pg_problemas.html">Problemas</a>
+            <a href="pg_denunciar.html">Denunciar</a>
+            <a href="pg_sobre.html">Sobre</a>
+            <a href="pg_contato.html">Contato</a>
+        </nav>
+    </header>
     <div class="denunciar">
-        <div class="cabecalho">
-            <img src="logo.png" alt="Logo do Site">
-        </div>
         <div class="formulario">
-            <h2>Denunciar Conteúdo</h2>
+            <h2>Denunciar Problema Urbano</h2>
             <form action="/denunciar" method="post">
                 <label>Motivo da denúncia:</label><br>
                 <textarea id="motivo" name="motivo" required></textarea><br><br>
