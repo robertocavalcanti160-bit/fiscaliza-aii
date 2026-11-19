@@ -22,18 +22,18 @@
 
         /* configs do header e seus conteudos */
 
-        .header-problemas {
+        .OR-header-problemas {
             
             display: flex;
             background-color: var(--verde-secundario)
             
         }
 
-        .header-problemas > div {
+        .OR-header-problemas > div {
             flex: 1;
         }
 
-        .header-content {
+        .OR-header-content {
             min-height: 200px;
             border-radius: 15px;
             margin-inline: 30px;
@@ -42,17 +42,23 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            text-align: left;
         }
 
-        .header-content h1 {
+        .OR-header-content h1 {
             font-size: 70px;
             margin-block: 0;
             color: var(--branco-100);
         }
-        .header-content h3 {
+        .OR-header-content h3 {
             margin-block-start: 0px;
             color: var(--branco-100);
             font-size: 35px;
+        }
+
+        .OR-header-content-image {
+            border-radius: 25px;
+            margin: 15px;
         }
 
     </style>
@@ -61,8 +67,8 @@
 
     <!--Essa header-problemas vai ser a seção inicial com um titulo uma breve introdução e uma imagem referente ao assunto-->
 
-    <header class="header-problemas">
-        <div class="header-content">
+    <header class="OR-header-problemas">
+        <div class="OR-header-content">
 
             <h1 >TITULO</h1>
             <h3>sub-titulo</h3>
@@ -70,7 +76,7 @@
         </div>
         <div>
 
-            <h1>img space</h1>
+            <img class="OR-header-content-image"  src="/assets/happy-african-american-designer-presenting-project-client-tablet-smiling.jpg" width="400px">
 
         </div>
     </header>
