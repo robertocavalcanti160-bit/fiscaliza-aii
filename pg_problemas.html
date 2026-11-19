@@ -6,16 +6,27 @@
     <title>Orientações</title>
     <style>
 
+        /* vi que dava para criar esse root para puxar as cores da paleta */
+        :root {
+            --verde-primario: #03542F;
+            --verde-secundario: #117743;
+            --cinza-escuro: #455C5D;
+            --branco-100: #FFFFFF;
+        }
 
+        /* Zerando margin e padding do body */
         div, header, body{
             margin: 0;
             padding: 0;
         }
 
+        /* configs do header e seus conteudos */
+
         .header-problemas {
             
             display: flex;
-            background-color:rgb(54, 52, 50);
+            background-color: var(--verde-secundario)
+            
         }
 
         .header-problemas > div {
@@ -23,8 +34,25 @@
         }
 
         .header-content {
+            min-height: 200px;
+            border-radius: 15px;
+            margin-inline: 30px;
+            margin-block: 15px;
             display: flex;
             justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .header-content h1 {
+            font-size: 70px;
+            margin-block: 0;
+            color: var(--branco-100);
+        }
+        .header-content h3 {
+            margin-block-start: 0px;
+            color: var(--branco-100);
+            font-size: 35px;
         }
 
     </style>
@@ -37,6 +65,7 @@
         <div class="header-content">
 
             <h1 >TITULO</h1>
+            <h3>sub-titulo</h3>
 
         </div>
         <div>
