@@ -1,88 +1,228 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-   <title>Sobre</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial;
-        }
+    <!DOCTYPE html>
+    <html lang="pt-BR">
 
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px 20px;
-            background-color: #03542F;
-        }
+    <head>
+    <title>Sobre</title>
+    <meta charset="UTF-8">
+    
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial;
+            }
 
-        header img {
-            width: 45px;
-            height: 45px;
-        }
+            header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 20px;
+                background-color: #03542F;
+            }
 
-        header > a {
-            display: flex;
-            width: 60px;
-            height: 60px;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            background-color: white;
-        }
+            header img {
+                width: 45px;
+                height: 45px;
+            }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            margin-left: 15px;
-        }
+            header > a {
+                display: flex;
+                width: 60px;
+                height: 60px;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                background-color: white;
+            }
 
-        nav a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
+            nav a {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                margin-left: 15px;
+            }
 
-<body>
-    <header>
-        <a href="pg_inicio.html" aria-label="Fiscaliza Aí - Início">
-            <img src="logo.png" alt="Logo do Fiscaliza Aí">
-        </a>
-        <nav aria-label="Menu principal">
-            <a href="pg_inicio.html">Início</a>
-            <a href="pg_problemas.html">Problemas</a>
-            <a href="pg_denunciar.html">Denunciar</a>
-            <a href="pg_sobre.html">Sobre</a>
-            <a href="pg_contato.html">Contato</a>
-        </nav>
-    </header>
+            nav a:hover {
+                text-decoration: underline;
+            }
+        </style>
+        <style> 
+            .destaque-sobre{
+            background-image:
+        linear-gradient(to right, rgba(0, 0, 0, 0.85), transparent),
+        url("Fiscaliza Aí_ Denúncia de Buraco na Via.png");
+                min-height: 80vh;
+                background-size:cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                color: azure;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 60px;
+                padding-right: 60px;
+            }
 
-    <div> 
-     <h1>Quem somos</h1>
-    <p>O Fiscaliza Aí é um sistema de denúncias urbanas desenvolvido como projeto acadêmico para a disciplina de Desenvolvimento Front-End,
-         envolvendo os cursos de Engenharia de Software e Ciências da Computação. A plataforma permite que os cidadãos registrem problemas urbanos, 
-         como buracos nas ruas, falta de iluminação pública, acúmulo de lixo, calçadas danificadas e problemas de saneamento básico. O sistema foi desenvolvido para possibilitar o preenchimento e o envio de denúncias diretamente pelo navegador, 
-         sem realizar o armazenamento das informações em um servidor.</p>
-    <h2>Nossa Missão</h2>
-    <p>Facilitar a participação dos cidadãos na identificação e comunicação de problemas urbanos,
-         utilizando a tecnologia como ferramenta de conscientização, acessibilidade e responsabilidade social, 
-         contribuindo para a construção de cidades mais organizadas, seguras e sustentáveis.</p>
-    <h2>Nossa Visão</h2>
-    <p> Ser reconhecido como uma iniciativa acadêmica inovadora que demonstra o potencial da tecnologia na transformação social, 
-        inspirando o desenvolvimento de soluções digitais capazes de aproximar a população das questões urbanas e incentivar uma cidadania mais ativa e participativa.</p>
-    <h2>Nossos Valores</h2>
-    <ul>
-        <li>Cidadania: Incentivar a participação ativa da população na identificação dos problemas que afetam a comunidade.</li>
-        <li>Inovação: Utilizar a tecnologia de maneira criativa para desenvolver soluções práticas e acessíveis.</li>
-        <li>Transparência: Promover uma comunicação clara e objetiva, valorizando a responsabilidade no registro das informações.</li>
-        <li>Acessibilidade: Oferecer uma plataforma intuitiva e de fácil utilização, permitindo que diferentes públicos possam utilizá-la.</li>
-        <li>Responsabilidade social: Estimular a conscientização coletiva sobre a importância da conservação dos espaços públicos.</li>
-        <li>Ética: Valorizar o uso responsável da tecnologia e o respeito às informações compartilhadas pelos usuários.</li>
-        <li>Colaboração: Reconhecer a importância da participação conjunta entre cidadãos, estudantes e sociedade na busca por melhorias urbanas.</li>
-    </ul>
-    </div>
+            .textos-destaque-sobre{
+                max-width: 600px;
+                margin-left: 60px;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                gap: 20px; 
+                h1 {
+                font-size: 48px;
+                color: white;
+                font-weight: bold;
+                margin: 0;}
+                p{ 
+                    font-size: 18px;
+                    color: white;
+                    line-height: 1.6;
+                    letter-spacing: 0.5px;
+                    word-spacing: 2px;
+                    margin: 0;}
+                }
+                .quem-somos{
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                gap: 20px; 
+                padding: 60px;
+                
+                h2{
+                    color: #03542F;
+                    font-size: 36px;
+                    margin:0;}
+                    
 
-   <img src="Fiscaliza Aí_ Denúncia de Buraco na Via.png"> 
-</body>
-</html>
+                    
+                p{
+                    font-size: 18px;
+                    line-height: 1.6;
+                    max-width: 800px;
+                    margin:0;
+    
+                }
+
+                }
+
+                    .missao-visao{
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 30px;
+                        padding: 60px;
+                    
+                        
+                    }
+
+                    .nossa-missao,
+                    .nossa-visao{ 
+                    background-color: #eaf3ea;
+                    font-size: 18px;
+                    line-height: 1.6;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 30px; 
+                    border-radius: 12px;  
+                        h2{ 
+                            color: #03542F;
+                            font-size: 28px;
+                            text-align: center;}
+                    }   
+
+                    .nossos-valores{
+                        color: #03542F; 
+                        padding: 60px; 
+                         h2 {
+                            color: #03542F;
+                             font-size: 36px;
+                             text-align: center;
+                             margin: 0 0 30px;
+                        }
+
+                    }
+                    .nossos-valores ul{ 
+                        gap: 20px;
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        padding-left: 0;
+                        margin: 0%;
+                        strong{
+                         color:#022e1a;
+                         display: block;
+                         margin-bottom: 8px;}
+                    }
+                    .nossos-valores li{ 
+                        background-color: #EAF3EA;
+                        padding: 25px;
+                        border-radius: 12px;
+                        list-style: none;
+                            color: #333333;
+                            font-size: 18px;
+                            line-height: 1.6;
+                        }
+                            
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <a href="pg_inicio.html" aria-label="Fiscaliza Aí - Início">
+                <img src="logo.png" alt="Logo do Fiscaliza Aí">
+            </a>
+            <nav aria-label="Menu principal">
+                <a href="pg_inicio.html">Início</a>
+                <a href="pg_problemas.html">Problemas</a>
+                <a href="pg_denunciar.html">Denunciar</a>
+                <a href="pg_sobre.html">Sobre</a>
+                <a href="pg_contato.html">Contato</a>
+            </nav>
+        </header>
+
+        <main class="pg-sobre"> 
+            <section class="destaque-sobre">
+            <div class="textos-destaque-sobre"> 
+                <h1>Sua cidade merece ser ouvida.</h1>
+            <p>O Fiscaliza Aí nasceu com o propósito de aproximar os cidadãos dos problemas da sua cidade. Por meio da tecnologia, incentivamos a participação da população na identificação de problemas urbanos, contribuindo para uma sociedade mais consciente, participativa e comprometida com o bem-estar coletivo.</p>
+        </div>
+            </section>
+        <section class="quem-somos"> 
+        <h2>Quem somos</h2>
+        <p>O Fiscaliza Aí é um sistema de denúncias urbanas desenvolvido como projeto acadêmico para a disciplina de Desenvolvimento Front-End,
+            envolvendo os cursos de Engenharia de Software e Ciências da Computação. A plataforma permite que os cidadãos registrem problemas urbanos, 
+            como buracos nas ruas, falta de iluminação pública, acúmulo de lixo, calçadas danificadas e problemas de saneamento básico. O sistema foi desenvolvido para possibilitar o preenchimento e o envio de denúncias diretamente pelo navegador, 
+            sem realizar o armazenamento das informações em um servidor.</p>
+            </section>  
+            <div class="missao-visao"> 
+            <section class="nossa-missao"> 
+        <h2>Nossa Missão</h2>
+        <p>Facilitar a participação dos cidadãos na identificação e comunicação de problemas urbanos,
+            utilizando a tecnologia como ferramenta de conscientização, acessibilidade e responsabilidade social, 
+            contribuindo para a construção de cidades mais organizadas, seguras e sustentáveis.</p>
+            </section>
+            <section class="nossa-visao">
+        <h2>Nossa Visão</h2>
+        <p> Ser reconhecido como uma iniciativa acadêmica inovadora que demonstra o potencial da tecnologia na transformação social, 
+            inspirando o desenvolvimento de soluções digitais capazes de aproximar a população das questões urbanas e incentivar uma cidadania mais ativa e participativa.</p>
+        </section>
+        </div>
+    <section class="nossos-valores">
+            <h2>Nossos Valores</h2>
+        
+            <ul>
+            
+                <li><strong>Cidadania: </strong>Incentivar a participação ativa da população na identificação dos problemas que afetam a comunidade.</li>
+                <li><strong>Inovação: </strong>Utilizar a tecnologia de maneira criativa para desenvolver soluções práticas e acessíveis.</li>
+                <li><strong>Transparência: </strong> Promover uma comunicação clara e objetiva, valorizando a responsabilidade no registro das informações.</li>
+                <li><strong>Acessibilidade: </strong> Oferecer uma plataforma intuitiva e de fácil utilização, permitindo que diferentes públicos possam utilizá-la.</li>
+                <li><strong>Responsabilidade social: </strong> Estimular a conscientização coletiva sobre a importância da conservação dos espaços públicos.</li>
+                <li><strong>Ética:</strong> Valorizar o uso responsável da tecnologia e o respeito às informações compartilhadas pelos usuários.</li>
+                <li><strong>Colaboração: </strong> Reconhecer a importância da participação conjunta entre cidadãos, estudantes e sociedade na busca por melhorias urbanas.</li>
+                <li><strong>Sustentabilidade: </strong>Incentivar a preservação dos espaços urbanos e a conscientização ambiental, contribuindo para a construção de cidades mais limpas, organizadas e sustentáveis.</li>
+                <li><strong>Compromisso com a Comunidade: </strong>Valorizar as necessidades da população, promovendo a participação cidadã e incentivando ações que contribuam para a melhoria da qualidade de vida nos espaços públicos.</li>
+            
+            </ul>
+    </section>
+        </main>
+    </body>
+    </html>
