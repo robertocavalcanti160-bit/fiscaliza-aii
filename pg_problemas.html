@@ -22,21 +22,27 @@
 
         /* configs do header e seus conteudos */
 
-        .OR-header-problemas {
+        .OR-header-problemas  {
             
             display: flex;
-            background-color: var(--verde-secundario)
+            background-image: url(/assets/happy-african-american-designer-presenting-project-client-tablet-smiling.jpg);
+            background-size:cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 500px;
             
         }
 
-        .OR-header-problemas > div {
+
+        .OR-header-problemas  > div {
             flex: 1;
+            min-width: 0;
         }
 
         .OR-header-content {
             min-height: 200px;
             border-radius: 15px;
-            margin-inline: 30px;
+            margin-inline: 240px;
             margin-block: 15px;
             display: flex;
             justify-content: center;
@@ -44,8 +50,9 @@
             flex-direction: column;
             text-align: left;
         }
+        
 
-        .OR-header-content h1 {
+        .OR-header-content  h1 {
             font-size: 70px;
             margin-block: 0;
             color: var(--branco-100);
@@ -53,12 +60,61 @@
         .OR-header-content h3 {
             margin-block-start: 0px;
             color: var(--branco-100);
-            font-size: 35px;
+            font-size: 25px;
+            max-width: 550px;
+            text-align: center;
+            
         }
 
-        .OR-header-content-image {
+
+        /* 
+        ====================================================
+        inicio do css para a seção de problemas de pavimento
+        ====================================================
+        */
+
+
+        .OR-header-content-image , .OR-pb-pavimento-img {
             border-radius: 25px;
             margin: 15px;
+        }
+
+
+        .OR-pb-pavimento-content h3 {
+            margin-block-start: 0px;
+            color: var(--branco-100);
+            font-size: 25px;
+            max-width: 650px;
+            text-align: center;
+
+        }
+
+        .OR-pb-pavimento-content h1 {
+            font-size: 70px;
+            margin-block: 0;
+            color: var(--branco-100);
+            max-width: 600px;
+            text-align: center;
+        }
+        .OR-pb-pavimento-content {
+            min-height: 200px;
+            border-radius: 15px;
+            margin-inline: 240px;
+            margin-block: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: left;
+        }
+        .OR-pb-pavimento  {
+            display: flex ;
+            background-color: var(--verde-primario)
+            
+        }
+        .OR-pb-pavimento > div {
+            flex: 1;
+            min-width: 0;
         }
 
     </style>
@@ -70,16 +126,35 @@
     <header class="OR-header-problemas">
         <div class="OR-header-content">
 
-            <h1 >TITULO</h1>
-            <h3>sub-titulo</h3>
+            <h1 >ORIENTAÇÕES</h1>
+            <h3>Essa seção de nosso site, vai lhe ensinar como indentificar um problema a ser denuciado.</h3>
 
         </div>
         <div>
 
-            <img class="OR-header-content-image"  src="/assets/happy-african-american-designer-presenting-project-client-tablet-smiling.jpg" width="500px">
+            
 
         </div>
-    </header>
+   </header>
+
+       <section class="OR-pb-pavimento">
+            <div class="OR-pb-pavimento-content">
+
+                <h1 >IRREGULARIDADE NO PAVIMENTO</h1>
+                <h3>Essa seção de nosso site, vai lhe ensinar como indentificar um problema a ser denuciado.</h3>
+
+            </div>
+            <div>
+
+                <img class="OR-pb-pavimento-img"  src="https://www.jornaldocomercio.com/_midias/jpg/2018/10/17/rodovia_estrada_rs_377_em_sao_francisco_de_assis_esburacada_com_buraco_no_asfalto__divulgacao_cnt-8510753.jpg" width="500px">
+
+            </div>
+        </section>
+
+    
+
+
+
 
 </body>
 </html>
