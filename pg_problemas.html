@@ -15,31 +15,73 @@
         }
 
         /* Zerando margin e padding do body */
-        div, header, body{
+        div, section, body, header {
             margin: 0;
             padding: 0;
         }
 
-        /* configs do header e seus conteudos */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-        .OR-header-problemas  {
+        /*menu*/
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: var(--verde-secundario);
+        }
+
+        header img {
+            width: 45px;
+            height: 45px;
+        }
+
+        header > a {
+            display: flex;
+            width: 60px;
+            height: 60px;
+            align-items: center;
+            border-radius: 50%;
+            background-color: var(--branco-100);
+        }
+
+        nav a {
+            color: var(--branco-100);
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 15px;
+        
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        
+
+        /* configs do section e seus conteudos */
+
+        .OR-section-problemas  {
             
             display: flex;
-            background-image: url(/assets/happy-african-american-designer-presenting-project-client-tablet-smiling.jpg);
+            background-image: url(/assets/OR-img-fundo-orientações.jpg);
             background-size:cover;
             background-position: center;
             background-repeat: no-repeat;
-            min-height: 500px;
+            min-height: 800px;
             
         }
 
 
-        .OR-header-problemas  > div {
+        .OR-section-problemas  > div {
             flex: 1;
             min-width: 0;
         }
 
-        .OR-header-content {
+        .OR-section-content {
             min-height: 200px;
             border-radius: 15px;
             margin-inline: 240px;
@@ -52,16 +94,16 @@
         }
         
 
-        .OR-header-content  h1 {
-            font-size: 70px;
+        .OR-section-content  h1 {
+            font-size: 100px;
             margin-block: 0;
-            color: var(--branco-100);
+            color: var(--verde-secundario);
         }
-        .OR-header-content h3 {
+        .OR-section-content h3 {
             margin-block-start: 0px;
-            color: var(--branco-100);
+            color: var(--verde-primario);
             font-size: 25px;
-            max-width: 550px;
+            max-width: 700px;
             text-align: center;
             
         }
@@ -69,18 +111,13 @@
 
         /* 
         ====================================================
-        inicio do css para a seção de problemas de pavimento
+        inicio do css para a seção de problemas de buracoRua
         ====================================================
         */
 
 
-        .OR-header-content-image , .OR-pb-pavimento-img {
-            border-radius: 25px;
-            margin: 15px;
-        }
 
-
-        .OR-pb-pavimento-content h3 {
+        .OR-pb-buracoRua-content h3 {
             margin-block-start: 0px;
             color: var(--branco-100);
             font-size: 25px;
@@ -89,14 +126,14 @@
 
         }
 
-        .OR-pb-pavimento-content h1 {
+        .OR-pb-buracoRua-content h1 {
             font-size: 70px;
             margin-block: 0;
             color: var(--branco-100);
-            max-width: 600px;
+            max-width: 6000px;
             text-align: center;
         }
-        .OR-pb-pavimento-content {
+        .OR-pb-buracoRua-content {
             min-height: 200px;
             border-radius: 15px;
             margin-inline: 240px;
@@ -107,12 +144,53 @@
             flex-direction: column;
             text-align: left;
         }
-        .OR-pb-pavimento  {
+        .OR-pb-buracoRua {
             display: flex ;
-            background-color: var(--verde-primario)
+            background-image: url(assets/OR-img-fundo-pb-asfalto.jpg);
+            min-height: 590px;
+            
             
         }
-        .OR-pb-pavimento > div {
+        .OR-pb-buracoRua > div {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .OR-pb-bueiroAberto-content h3 {
+            margin-block-start: 0px;
+            color: var(--verde-primario);
+            font-size: 25px;
+            max-width: 650px;
+            text-align: center;
+
+        }
+
+        .OR-pb-bueiroAberto-content h1 {
+            font-size: 70px;
+            margin-block: 0;
+            color: var(--verde-primario);
+            max-width: 600px;
+            text-align: center;
+        }
+        .OR-pb-bueiroAberto-content {
+            min-height: 200px;
+            border-radius: 15px;
+            margin-inline: 240px;
+            margin-block: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: left;
+        }
+        .OR-pb-bueiroAberto {
+            display: flex ;
+            background-image: url(assets/OR-img-fundo-pb-bueiroaberto.jpg);
+            min-height: 590px;
+            
+            
+        }
+        .OR-pb-bueiroAberto > div {
             flex: 1;
             min-width: 0;
         }
@@ -121,33 +199,55 @@
 </head>
 <body>
 
-    <!--Essa header-problemas vai ser a seção inicial com um titulo uma breve introdução e uma imagem referente ao assunto-->
+    <header>
+        <a href="pg_inicio.html" aria-label="Fiscaliza Aí - Início">
+            <img src="logo.png" alt="Logo do Fiscaliza Aí">
+        </a>
+        <nav aria-label="Menu principal">
+            <a href="pg_inicio.html">Início</a>
+            <a href="pg_problemas.html">Problemas</a>
+            <a href="pg_denunciar.html">Denunciar</a>
+            <a href="pg_sobre.html">Sobre</a>
+            <a href="pg_contato.html">Contato</a>
+        </nav>
+    </header>
 
-    <header class="OR-header-problemas">
-        <div class="OR-header-content">
+    <!--Essa section-problemas vai ser a seção inicial com um titulo uma breve introdução e uma imagem referente ao assunto-->
+
+    <section class="OR-section-problemas">
+        <div class="OR-section-content">
 
             <h1 >ORIENTAÇÕES</h1>
             <h3>Essa seção de nosso site, vai lhe ensinar como indentificar um problema a ser denuciado.</h3>
 
         </div>
         <div>
-
-            
-
         </div>
-   </header>
+   </section>
 
-       <section class="OR-pb-pavimento">
-            <div class="OR-pb-pavimento-content">
+       <section class="OR-pb-buracoRua">
+            <div class="OR-pb-buracoRua-content">
 
-                <h1 >IRREGULARIDADE NO PAVIMENTO</h1>
+                <h1 >EROSÃO NO ASFALTO</h1>
                 <h3>Essa seção de nosso site, vai lhe ensinar como indentificar um problema a ser denuciado.</h3>
 
             </div>
             <div>
 
-                <img class="OR-pb-pavimento-img"  src="https://www.jornaldocomercio.com/_midias/jpg/2018/10/17/rodovia_estrada_rs_377_em_sao_francisco_de_assis_esburacada_com_buraco_no_asfalto__divulgacao_cnt-8510753.jpg" width="500px">
+        
+            </div>
+        </section>
 
+       <section class="OR-pb-bueiroAberto">
+            <div class="OR-pb-bueiroAberto-content">
+
+                <h1 >POÇO DE VISITA (PV) IRREGULAR</h1>
+                <h3>Essa seção de nosso site, vai lhe ensinar como indentificar um problema a ser denuciado.</h3>
+
+            </div>
+            <div>
+
+        
             </div>
         </section>
 
