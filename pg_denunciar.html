@@ -42,6 +42,70 @@
             text-decoration: underline;
         }
     </style>
+
+    <script>
+
+        let opcoes = document.getElementsByName("problema");
+        for (let i = 0; i < opcoes.length; i++) {
+            opcoes[i].onclick = function() {
+                if (opcoes[i].value == "Outros") {
+                    document.getElementById("campoOutro").style.display = "block";
+                }
+                else {
+                    document.getElementById("campoOutro").style.display = "none";
+                }
+            };
+        }
+
+        function avancar1() {
+            let problema = document.querySelector('input[name="problema"]:checked');
+            if (problema == null) {
+                alert("Selecione um problema!");
+            }
+            else if (problema.value == "Outros" &&
+            document.getElementById("outroProblema").value == "") {
+                alert("Informe o problema!");
+            }
+            else {
+                document.getElementById("form1").style.display = "none";
+                document.getElementById("form2").style.display = "block";
+            }
+        }
+
+        function avancar2() {
+            let descricao = document.getElementById("descricao").value;
+            let local = document.getElementById("local").value;
+            if (descricao == "" || local == "") {
+                alert("Preencha a descrição e o local!");
+            }
+            else {
+                document.getElementById("form2").style.display = "none";
+                document.getElementById("form3").style.display = "block";
+            }
+        }
+
+        function voltar1() {
+            document.getElementById("form2").style.display = "none";
+            document.getElementById("form1").style.display = "block";
+        }
+        function voltar2() {
+            document.getElementById("form3").style.display = "none";
+            document.getElementById("form2").style.display = "block";
+        }
+
+        function finalizar() {
+            if (document.getElementById("anonimo").checked == false) {
+                if (document.getElementById("nome").value == "" ||
+                    document.getElementById("email").value == "") {
+                    alert("Preencha seu nome e e-mail!");
+                    return;
+                }
+            }
+            document.getElementById("form3").style.display = "none";
+            document.getElementById("final").style.display = "block";
+        }
+
+    </script>
 </head>
 
 <body>
@@ -58,20 +122,80 @@
         </nav>
     </header>
     <div class="denunciar">
-        <div class="formulario">
-            <h2>Denunciar Problema Urbano</h2>
-            <form action="/denunciar" method="post">
-                <label>Motivo da denúncia:</label><br>
-                <textarea id="motivo" name="motivo" required></textarea><br><br>
-                <label>Cidade:</label><br>
-                <textarea id="cidade" name="cidade" required></textarea><br><br>
-                <label>Tipo:</label><br>
-                <textarea id="tipo" name="tipo" required></textarea><br><br>
-                <label>Contato:</label><br>
-                <textarea id="contato" name="contato"></textarea><br><br>
-                <input type="submit" value="Enviar Denúncia">
-            </form>
-        </div>
+        <form>
+            <div id="form1">
+                <h3>1. Qual problema você identificou?</h3>
+                <table>
+                    <tr>
+                        <td><input type="radio" name="problema" value="Buraco na via"> Buraco na via</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="problema" value="Iluminação pública"> Iluminação pública</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="problema" value="Descarte de lixo"> Descarte irregular de lixo</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="problema" value="Infraestrutura"> Problemas de infraestrutura</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="problema" value="Outros"> Outros</td>
+                    </tr>
+                </table>
+
+                <p id="campoOutro" style="display:none;">
+                    Especifique o problema:
+                    <input type="text" id="outroProblema">
+                </p>
+
+                <button type="button" onclick="avancar1()">Continuar</button>
+            </div>
+            <div id="form2" style="display:none;">
+                <h3>2. Descrição da ocorrência</h3>
+                <table>
+                    <tr>
+                        <td>Descrição:</td>
+                        <td><textarea id="descricao" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Local:</td>
+                        <td><input type="text" id="local" required></td>
+                    </tr>
+                    <tr>
+                        <td>Fotos:</td>
+                        <td><input type="file" accept="image/*" multiple></td>
+                    </tr>
+                </table>
+                <button type="button" onclick="voltar1()">Voltar</button>
+                <button type="button" onclick="avancar2()">Continuar</button>
+            </div>
+            <div id="form3" style="display:none;">
+                <h3>3. Identificação do denunciante</h3>
+                <table>
+                    <tr>
+                        <td>Nome (opcional):</td>
+                        <td><input type="text" id="nome"></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail (opcional):</td>
+                        <td><input type="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Telefone (opcional):</td>
+                        <td><input type="text" id="telefone"></td>
+                    </tr>
+                </table>
+                <input type="checkbox" id="anonimo">
+                Desejo realizar a denúncia anonimamente.
+                <br><br>
+                <button type="button" onclick="voltar2()">Voltar</button>
+                <button type="button" onclick="finalizar()">Finalizar</button>
+            </div>
+            <div id="final" style="display:none;">
+                <h3>Denúncia concluída!</h3>
+                <p>Você chegou ao final do formulário.</p>
+            </div>
+        </form>
     </div>
 </body>
 
