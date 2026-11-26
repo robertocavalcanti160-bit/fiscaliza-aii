@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Fiscaliza Aí - Início</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!-- Nosso CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Nosso JavaScript -->
+    <script src="script.js" defer></script>
+
+    <!-- Cabeçalho padrão do grupo -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #03542F;
+        }
+
+        header img {
+            width: 45px;
+            height: 45px;
+        }
+
+        header > a {
+            display: flex;
+            width: 60px;
+            height: 60px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="pg_inicio.html" aria-label="Fiscaliza Aí - Início">
+            <img src="logo.png" alt="Logo do Fiscaliza Aí">
+        </a>
+        <nav aria-label="Menu principal">
+            <a href="pg_inicio.html">Início</a>
+            <a href="pg_problemas.html">Problemas</a>
+            <a href="pg_denunciar.html">Denunciar</a>
+            <a href="pg_sobre.html">Sobre</a>
+            <a href="pg_contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Destaque (Hero) -->
+        <section class="destaque">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <p class="local"><strong>JOÃO PESSOA · PARAÍBA</strong></p>
+                        <h1 class="titulo">João Pessoa melhora quando alguém <i>fiscaliza</i>.</h1>
+                        <p>
+                            Buracos, iluminação, lixo e saneamento nos bairros da cidade,
+                            do Centro à orla de Manaíra, Tambaú e Cabo Branco.
+                        </p>
+                        <a href="pg_denunciar.html" class="btn btn-success">Registrar denúncia</a>
+                        <a href="pg_problemas.html" class="btn btn-outline-success">Ver problemas</a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <img src="https://construtorabrascon.com.br/wp-content/uploads/2023/04/DJI_0601-1-1-1-800x450.jpg" alt="Vista aérea da orla de João Pessoa" class="foto">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- O que dá para denunciar -->
+        <section class="container conteudo">
+            <h2>O que dá para denunciar</h2>
+            <p>Escolha a categoria mais próxima do que você encontrou.</p>
+
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="card caixa">
+                        <img src="https://images.unsplash.com/photo-1657811146442-0d66d65dbe92?w=400&h=250&fit=crop" alt="Buraco na rua" class="foto">
+                        <div class="card-body">
+                            <h4>Buraco na via</h4>
+                            <p>Crateras e afundamentos no asfalto que danificam veículos e causam acidentes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card caixa">
+                        <img src="https://images.unsplash.com/photo-1626855424940-336dbc95d26f?w=400&h=250&fit=crop" alt="Poste de luz" class="foto">
+                        <div class="card-body">
+                            <h4>Iluminação pública</h4>
+                            <p>Postes apagados, lâmpadas queimadas ou ruas escuras.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card caixa">
+                        <img src="https://images.unsplash.com/photo-1759401654832-ab2e73a14336?w=400&h=250&fit=crop" alt="Sacos de lixo na calçada" class="foto">
+                        <div class="card-body">
+                            <h4>Acúmulo de lixo</h4>
+                            <p>Resíduos acumulados em calçadas e terrenos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card caixa">
+                        <img src="https://images.unsplash.com/photo-1742036953114-86479b041e81?w=400&h=250&fit=crop" alt="Calçada quebrada" class="foto">
+                        <div class="card-body">
+                            <h4>Calçada danificada</h4>
+                            <p>Pisos quebrados que dificultam a passagem de pedestres e cadeirantes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card caixa">
+                        <img src="https://images.unsplash.com/photo-1574410730686-d9ad77a0da32?w=400&h=250&fit=crop" alt="Bueiro na rua" class="foto">
+                        <div class="card-body">
+                            <h4>Saneamento básico</h4>
+                            <p>Vazamento de esgoto, água parada e bueiros entupidos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card caixa outro">
+                        <div class="card-body">
+                            <h4>Outro problema</h4>
+                            <p>Sinalização apagada, poda de árvores, entulho ou qualquer outra situação da cidade.</p>
+                            <a href="pg_denunciar.html" class="btn btn-light">Registrar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Como funciona -->
+        <section class="passos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h2>Como funciona</h2>
+                        <p>Sem cadastro e sem burocracia. A denúncia fica pronta em poucos minutos.</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <ol>
+                            <li><strong>Escolha o tipo:</strong> selecione a categoria do problema que você encontrou.</li>
+                            <li><strong>Descreva e localize:</strong> conte o que está acontecendo e informe o endereço e o bairro.</li>
+                            <li><strong>Envie:</strong> confirme a denúncia e receba uma mensagem de sucesso.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape text-center">
+        <p>Fiscaliza Aí · Projeto acadêmico · Engenharia de Software e Ciências da Computação</p>
+    </footer>
+</body>
+</html>
